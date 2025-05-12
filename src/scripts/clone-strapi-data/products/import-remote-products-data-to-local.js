@@ -2,7 +2,7 @@ import { strapi } from '@strapi/client';
 import 'dotenv/config';
 import * as fs from 'fs';
 
-// I haven't find the way to create the 'de' locale entry from 'en'. that 's why I use 'en' here. Please check the data.json in the same folder after running the script for more info
+// I haven't find the way to create the 'de' locale entry from 'en'. that's why I use only 'en' here. Please check the data.json in the same folder after running the script for more info
 const locales = ['en'];
 
 // to run this script. The entities from this https://drive.google.com/file/d/1olTUhfm8qGrncoohiyerHdvdHwiDeV0h/view?usp=sharing must be created first
@@ -54,10 +54,10 @@ const allRemoteProducts = await Promise.all(
   return result
     .map((data) => data.data)
     .flat()
-    .map((p) => ({
-      ...p,
-      group: { set: p.group.documentId },
-      tenant: { set: p.tenant.documentId },
+    .map(({ material_prices, ...rest }) => ({
+      ...rest,
+      group: { set: rest.group.documentId },
+      tenant: { set: rest.tenant.documentId },
     }));
 });
 
