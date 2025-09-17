@@ -1,0 +1,67 @@
+[
+  {
+    "id": 11,
+    "documentId": "j94e373hi2k8f9tk87gb9nrl",
+    "fromCBM": 0,
+    "toCBM": 99,
+    "amount": 10,
+    "createdAt": "2025-01-10T02:33:59.297Z",
+    "updatedAt": "2025-04-25T03:11:24.904Z",
+    "publishedAt": "2025-04-25T03:11:25.111Z",
+    "unit": "percentage",
+    "type": "normal",
+    "destinationZips": null
+  },
+  {
+    "id": 12,
+    "documentId": "ltvi5daf1hthn50buj3zj422",
+    "fromCBM": 200,
+    "toCBM": 1000,
+    "amount": 6,
+    "createdAt": "2025-01-29T14:13:38.074Z",
+    "updatedAt": "2025-04-25T03:11:31.755Z",
+    "publishedAt": "2025-04-25T03:11:31.962Z",
+    "unit": "percentage",
+    "type": "normal",
+    "destinationZips": null
+  },
+  {
+    "id": 13,
+    "documentId": "wpx1iag1xtw5mf40k9906895",
+    "fromCBM": 100,
+    "toCBM": 199,
+    "amount": 8,
+    "createdAt": "2025-01-29T14:12:46.284Z",
+    "updatedAt": "2025-04-25T03:11:38.982Z",
+    "publishedAt": "2025-04-25T03:11:39.102Z",
+    "unit": "percentage",
+    "type": "normal",
+    "destinationZips": null
+  },
+  {
+    "id": 18,
+    "documentId": "muzu3x2yiigodvfqmj1zuaay",
+    "fromCBM": null,
+    "toCBM": null,
+    "amount": 500,
+    "createdAt": "2025-04-25T03:12:46.348Z",
+    "updatedAt": "2025-04-25T03:12:46.348Z",
+    "publishedAt": "2025-04-25T03:12:46.461Z",
+    "unit": "absolute",
+    "type": "special",
+    "destinationZips": "27568\n28779"
+  },
+  {
+    "id": 19,
+    "documentId": "ridwo8yylnwjc6th6snpmtn2",
+    "fromCBM": null,
+    "toCBM": null,
+    "amount": 2,
+    "createdAt": "2025-04-25T03:12:13.048Z",
+    "updatedAt": "2025-05-23T04:58:00.031Z",
+    "publishedAt": "2025-05-23T04:58:00.249Z",
+    "unit": "percentage",
+    "type": "special",
+    "destinationZips": "25999\n22844"
+  }
+]
