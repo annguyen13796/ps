@@ -47,17 +47,17 @@ const local = localClient.collection('substrate-deliveries');
 // STEP 2
 // DISABLE step 1 then run step 2
 // create locale entries
-// const allRemote = data;
+const allRemote = data;
 
-// const tasks = allRemote.map((i) => {
-//   return remote.update(
-//     i.documentId,
-//     {
-//       internalIdentifier: i.internalIdentifier,
-//       title: i.title,
-//     },
-//     { locale: 'de' }
-//   );
-// });
+const tasks = allRemote.map((i) => {
+  return local.update(
+    i.documentId,
+    {
+      internalIdentifier: i.internalIdentifier,
+      title: i.title,
+    },
+    { locale: 'de' }
+  );
+});
 
-// await Promise.all(tasks);
+await Promise.all(tasks);

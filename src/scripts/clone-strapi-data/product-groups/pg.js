@@ -50,16 +50,16 @@ const local = localClient.collection('substrate-product-groups');
 // DISABLE step 1 then run step 2
 // create locale entries
 
-// const tasks = data.map((pg) =>
-//   remote.update(
-//     pg.documentId,
-//     {
-//       title: pg.title,
-//       internalIdentifier: pg.internalIdentifier,
-//       tenant: pg.tenant,
-//     },
-//     { locale: 'de' }
-//   )
-// );
+const tasks = data.map((pg) =>
+  local.update(
+    pg.documentId,
+    {
+      title: pg.title,
+      internalIdentifier: pg.internalIdentifier,
+      tenant: pg.tenant,
+    },
+    { locale: 'de' }
+  )
+);
 
-// await Promise.all(tasks);
+await Promise.all(tasks);
